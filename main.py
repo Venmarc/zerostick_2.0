@@ -10,7 +10,7 @@ from agent import agent_loop
 def main():
     parser = argparse.ArgumentParser(description="Stickman Video Generation Agent")
     parser.add_argument("prompt", nargs="?", help="The animation prompt (e.g., 'Make a stickman jump')", default="Make a stickman waving his hand")
-    parser.add_argument("--model", help="Ollama model to use", default="deepseek-r1-distill-qwen-14b")
+    parser.add_argument("--model", help="Ollama model to use", default="deepseek-r1:14b")
     
     args = parser.parse_args()
     

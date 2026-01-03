@@ -75,7 +75,8 @@ def extract_json(content):
         
     return None
 
-def agent_loop(user_request, model='deepseek-r1-distill-qwen-14b', callback=None):
+
+def agent_loop(user_request, model='deepseek-r1:14b', callback=None):
     """
     Main agent loop.
     callback: function(type: str, content: str) -> None
